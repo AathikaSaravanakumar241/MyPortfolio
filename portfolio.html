@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: white;
+      color:black;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg,purple,blue);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.8rem; }
+    header p { font-size: 1.2rem; margin-top: 8px; }
+
+    nav {
+      display: flex; justify-content: center;
+      gap: 25px; background:black;
+      padding: 12px;
+    }
+    nav a {
+      color: white; text-decoration: none;
+      font-weight: bold; transition: 0.3s;
+    }
+    nav a:hover { color: yellowgreen; }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 2rem;
+      color: blue;
+    }
+
+
+    #about p {
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .skill-card {
+      background: white;
+      border-radius: 15px;
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: 0.4s;
+    }
+    .skill-card:hover {
+      transform: translateY(-10px) scale(1.03);
+    }
+    .skill-card img {
+      width: 60px; margin-bottom: 15px;
+    }
+    .skill-card h3 {
+      margin-bottom: 10px;
+      color:yellow;
+    }
+
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 25px;
+    }
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-8px);
+    }
+    .project h3 {
+      color: blue;
+      margin-bottom: 8px;
+    }
+
+    
+    #contact p {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .contact-links a {
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: blue;
+      color:white;
+      transition: 0.3s;
+    }
+    .contact-links a:hover {
+      background: orange;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: black;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aathika V S</h1>
+    <p>Aspiring Software engineer |Web Developer |  Learner | Prefinal year student</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer who loves creating 
+      unique and user-friendly websites. Skilled in HTML, 
+      CSS, JavaScript, java DSA and exploring new technologies to 
+      deliver creative solutions.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/html-5.png" alt="HTML">
+        <h3>HTML</h3>
+        <p>Crafting semantic and structured layouts.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/css3.png" alt="CSS">
+        <h3>CSS</h3>
+        <p>Designing responsive, modern interfaces.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>Building interactivity and dynamic features.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/java-coffee-cup-logo.png" alt="Java">
+        <h3>Java</h3>
+        <p>Object-oriented programming and application development.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/github--v1.png" alt="GitHub">
+        <h3>Git & GitHub</h3>
+        <p>Version control and collaborative coding.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Restaurant Menu Page</h3>
+        <p>A responsive menu page with category filters 
+        and food images.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio with animations, hover effects 
+        and unique design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch with me through:</p>
+    <div class="contact-links">
+      <a href="mailto:aathika@example.com">Email</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Aathika V S | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
+```
